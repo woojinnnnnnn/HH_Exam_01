@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
     res.send('hello World')
 })
 
-app.use('/api/users', userRouter)
+app.use('/users', userRouter)
 
 app.listen(PORT, () => {
     console.log(PORT, 'server is Running')
